@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "href": "#",
+    "imageSrc": "https://i.imgur.com/pCY0r1B.jpg",
+    "imageAlt": "Property Alt",
+    "price": "$4.354.365",
+    "address": "7187 Morapa Dr."
+  },
+  {
+    "id": 1,
+    "href": "#",
+    "imageSrc": "https://i.imgur.com/w7ZoE0Q.jpg",
+    "imageAlt": "Property Alt",
+    "price": "$4.354.365",
+    "address": "1301 Dolphin Terrace"
+  },
+  {
+    "id": 1,
+    "href": "#",
+    "imageSrc": "https://i.imgur.com/RQ3K6Rq.jpg",
+    "imageAlt": "Property Alt",
+    "price": "$4.354.365",
+    "address": "215 Milford Dr."
+  },
+  {
+    "id": 1,
+    "href": "#",
+    "imageSrc": "https://i.imgur.com/iXVt27U.jpg",
+    "imageAlt": "Property Alt",
+    "price": "$4.354.365",
+    "address": "9315 Nightingale Dr."
+  },
+  {
+    "id": 1,
+    "href": "#",
+    "imageSrc": "https://i.imgur.com/lKoUmbC.jpg",
+    "imageAlt": "Property Alt",
+    "price": "$4.354.365",
+    "address": "14953 Sutton St°"
+  },
+  {
+    "id": 1,
+    "href": "#",
+    "imageSrc": "https://i.imgur.com/6qv9yFI.jpg",
+    "imageAlt": "Property Alt",
+    "price": "$4.354.365",
+    "address": "215 Milford Dr."
+  }
+]

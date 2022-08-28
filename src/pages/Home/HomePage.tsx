@@ -1,61 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ErrorBoundary } from '../../components';
 import { NavBar } from '../../components/NavBar';
 import { Properties } from '../../components/Properties';
-import Prop1 from '../../assets/properties/1.png';
-
-const properties = [
-    {
-        id: 1,
-        href: '#',
-        imageSrc: Prop1,
-        imageAlt: 'Property Alt',
-        price: '$4.354.365',
-        address: '7187 Morapa Dr.',
-    },
-    {
-        id: 1,
-        href: '#',
-        imageSrc: Prop1,
-        imageAlt: 'Property Alt',
-        price: '$4.354.365',
-        address: '7187 Morapa Dr.',
-    },
-    {
-        id: 1,
-        href: '#',
-        imageSrc: Prop1,
-        imageAlt: 'Property Alt',
-        price: '$4.354.365',
-        address: '7187 Morapa Dr.',
-    },
-    {
-        id: 1,
-        href: '#',
-        imageSrc: Prop1,
-        imageAlt: 'Property Alt',
-        price: '$4.354.365',
-        address: '7187 Morapa Dr.',
-    },
-    {
-        id: 1,
-        href: '#',
-        imageSrc: Prop1,
-        imageAlt: 'Property Alt',
-        price: '$4.354.365',
-        address: '7187 Morapa Dr.',
-    },
-    {
-        id: 1,
-        href: '#',
-        imageSrc: Prop1,
-        imageAlt: 'Property Alt',
-        price: '$4.354.365',
-        address: '7187 Morapa Dr.',
-    },
-];
+import axios from 'axios';
 
 const HomePage = () => {
+    const [properties, setProperties] = useState([]);
+
+    useEffect(() => {
+        axios
+            .get('./data.json')
+            .then((res) => setProperties(res.data))
+            .catch((err) => console.log(err));
+    }, []);
     return (
         <ErrorBoundary>
             <>
