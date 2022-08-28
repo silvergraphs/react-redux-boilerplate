@@ -26,9 +26,7 @@ export const NavBar = () => (
 
                 <Popover>
                     <div className="relative pt-6 px-4 sm:px-6 lg:px-8 md:flex md:justify-between">
-                        <nav
-                            className="relative flex items-center justify-between sm:h-10 lg:justify-start"
-                        >
+                        <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
                             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                                 <div className="flex items-center justify-between w-full md:w-auto">
                                     <a href="#">
@@ -56,7 +54,7 @@ export const NavBar = () => (
                                     <a
                                         key={item.name}
                                         href={item.href}
-                                        className="font-medium hover:text-gray-500"
+                                        className="font-medium hover:text-gray-500 font-open hover:transition-all transition ease-in-out duration-200"
                                     >
                                         {item.name}
                                     </a>
@@ -65,7 +63,7 @@ export const NavBar = () => (
                         </nav>
                         <a
                             href={''}
-                            className="font-medium hover:text-gray-500 pt-3 hidden md:block"
+                            className="font-medium hover:text-gray-500 pt-3 hidden md:block font-open"
                         >
                             En
                         </a>

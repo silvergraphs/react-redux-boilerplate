@@ -17,12 +17,12 @@ export const Properties = ({ properties }: IProperties) => (
     <main className="mt-10 mx-auto px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
         <div className="flex flex-col md:flex-row justify-between space-y-6 lg:text-left">
             <h1 className="font-bold text-gray-900 text-3xl md:text-3xl lg:text-4xl md:max-w-2xl">
-                <span className="block xl:inline">
+                <p className="block xl:inline font-poppins">
                     We are an award winning interior design Agency
-                </span>
+                </p>
             </h1>
             <div className={'border-2 border-black'}>
-                <p className={'text-xl lg:text-2xl font-bold px-5 py-3'}>
+                <p className={'text-xl lg:text-2xl font-bold px-5 py-3 hover:bg-gray-100 hover:transition-all transition ease-in-out duration-200'}>
                     View all properties →
                 </p>
             </div>
@@ -31,7 +31,7 @@ export const Properties = ({ properties }: IProperties) => (
             {properties.map((property) => (
                 <div>
                     <div key={property.id} className="group relative">
-                        <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                        <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none hover:transition-all transition ease-in-out duration-200">
                             <img
                                 src={property.imageSrc}
                                 alt={property.imageAlt}
